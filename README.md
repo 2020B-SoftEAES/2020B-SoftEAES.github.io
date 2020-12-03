@@ -44,3 +44,87 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 #### Titulo 4
 ##### Titulo 5
 ###### Titulo 6
+
+Mi nombre es **William Suntaxi** y soy DJ de __música electrónica__
+
+## Listas Ordenadas
+
+Las listas ordenadas son las siguientes:
+
+1.  Lunes
+1.  Martes
+1.  Miercoles
+
+Las listas no ordenadas son las siguientes:
+
+-  Manzanas
+-  Peras
+-  Piñas
+
+## Links
+
+Quiero ir a: [Google](http://www.google.com)
+
+Quiero ir a: [Google](http://www.google.com "Me gustan las papayas") y se mostrará un mensaje encima del link
+
+Imagen
+
+![Carro](https://i.pinimg.com/564x/d0/2d/75/d02d751140d2a878e7e8e05c1587355c.jpg "Otro mensajito")
+
+<img src="https://i.pinimg.com/564x/d0/2d/75/d02d751140d2a878e7e8e05c1587355c.jpg" height="300px">
+
+En `python` se puede crear variables vacias.
+
+```python
+print("Hola Mundo")
+```
+
+```javascript
+function comer(){
+}
+```
+
+```xml
+<hola fonetica="3">Como estas</hola>>
+```
+
+```
+$apt get install xxx
+$echo HOLA
+$apt update
+```
+
+## Tablas
+
+
+| Nombre | Apellido
+| --- | ---  |
+| William  | Suntaxi |
+| Jorge  | Suntaxi |
+
+## Quotes
+
+Cita uno
+
+> LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARGUISIMA y pues mas y mas 
+> Igual sigue siendo parte de la cita
+
+Otra cita
+
+> uno
+> dos
+> tres
+> **William** `Suntaxi`
+
+## Lineas separadores y HTML
+
+Contenido
+
+---
+
+Contenido
+
+---
+
+<p>Hola amigos **Como estas** <strong> COMO ESTAS </strong> </p>
+
