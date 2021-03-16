@@ -1,28 +1,66 @@
-/**
- * Usuario.js
- *
- * @description :: A model definition represents a database table/collection.
- * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
- */
-
 module.exports = {
-
-  tableName: 'db_persona',
+  tableName: 'db_usuario',
   attributes: {
-    nombre: {
-      type: 'string',
+    id: {
+      type: 'number',
       required: true,
+      unique: true,
+      autoIncrement: true,
+      columnType: 'int',
+      /*columnName: 'gramos_ingerir',
+      columnType: 'int',
+      defaultsTo: 0*/
+    },
+    nombre: {
+      type: 'String',
+      required: true,
+      maxLength: 50,
     },
     apellido: {
-      type: 'string',
+      type: 'String',
+      maxLength: 50,
+      required: true
+    },
+    cedula: {
+      type: 'String',
+      maxLength: 10,
+      required: true
+    },
+    contrasenia: {
+      type: 'String',
+      maxLength: 512,
+      required: true,
+      encrypt: true,
+    },
+    genero: {
+      type: 'String',
+      maxLength: 1,
+      required: true
+    },
+    fechaNacimiento: {
+      type: 'ref',
+      columnType: 'date',
+      columnName: 'fecha_nacimiento',
+      required: true
+    },
+    celular: {
+      type: 'String',
+      maxLength: 10,
       required: true
     },
     email: {
-      type: 'string',
+      type: 'String',
+      columnName: 'correo_electronico',
+      maxLength: 256,
       required: true,
       isEmail: true
+    },
+    idTipoUsuario:{
+      model: 'TipoUsuario'
+    },
+    pruebaUsuario:{
+      collection: 'PruebaUsuario',
+      via: 'idUsuario'
     }
-  },
-
+  }
 };
-
