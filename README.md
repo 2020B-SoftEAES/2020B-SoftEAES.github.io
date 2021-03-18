@@ -6,8 +6,8 @@
 
 ## Fundador del Proyecto
 
-William Suntaxi - CEO
-Lenin Miño - Gerente
+- William Suntaxi - CEO
+- Lenin Miño - Gerente
 
 ## Licencia del Proyecto
 
