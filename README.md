@@ -134,5 +134,6 @@ Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. So
     - El tercero (Z) se le conoce como revisión y nos indica que se hizo una revisión del código por algún fallo. Ejemplo: 1.2.2, 3.3.4
 
 <div align="center"><img src="https://lh3.googleusercontent.com/proxy/HM6q9RZQg3HykoFGN1rzDp3D5nVnvZ4XSl3UwdzH3SgaEC0APaX5wIK1U7H5ZLSNwl1UqufXG4g871NXIO4wC6k3V1PS7m5_0BYdqW1nrSdkUrvErFveVPK2WlePw1LLA24DpzfDLFS7EacP9OnzePv8PEFFgLvCFxluKj7xHzTMjwDVdMxEBZhX_aHYWAvwcn6THwZTackrgYPzhT0Di2dtl8o" height="100px"></div>
-## Canal de Comunicación
 
+## Canal de Comunicación
+Te invitamos a ingresar en nuestro canal de comunicación https://discord.gg/r25BzzejrG
