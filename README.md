@@ -111,7 +111,8 @@ Este medio de comunicación solo es para tratar todos los temas relacionados del
 La solución de los problemas presentados (Bug) en el proyecto se puede realizar en el repositorio de GitHub. Donde se puede recomendar o dar solución al problema.
 
 ## Tipo de Manera de Tomar Desiciones
-Se va basar en un comite, donde los fundadres y el grupo de lideres van a exponer sus ideas, sugerencias en cada desición que se va tomar en el Proyecto. Los lideres tienen la obligación de igualmanera realizar un comite con los desarolladores para escuchar sus ideas, sugeencias. Tomando en cuenta la opinión de cada persona.
+Tipo:Consenso
+Donde los fundadres y el grupo de lideres van a exponer sus ideas, sugerencias en cada desición que se va tomar en el Proyecto. Los lideres tienen la obligación de igualmanera realizar un comite con los desarolladores para escuchar sus ideas, sugeencias. Tomando en cuenta la opinión de cada persona.
 Nosotros creemos y confiamos en el dialogo para tener una misma visión y misión entre todos los miembros que conforman el equipo. Cada palabra dicha por cada integrante es un aporte para la solución del problema planteado, dando así paso a la Democracia.
 
 <div align="center"><img src="https://i2.wp.com/notodoesmatematicas.com/wp-content/uploads/consenso.jpg?fit=740%2C444&ssl=1" height="100px"></div>
