@@ -33,7 +33,7 @@ export class UsuarioService {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo;
     return this.httpClientService
-      .post<UsuarioDto>(url, objeto, {headers});
+      .post<UsuarioDto>(url, objeto);
   }
 
   findById(id: number): Observable<UsuarioDto> {
