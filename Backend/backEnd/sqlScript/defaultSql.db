@@ -1,0 +1,4 @@
+Usuario
+{"nombre":"Roberto","apellido":"Toa","cedula":"1723012553","contrasenia":"YWVzLTI1Ni1nY20kJGRlZmF1bHQ=$8P6sP8IV5u3vqj7I$Ggn9pwlVlfc=$/IP3J8kLCYwHYVm8acXo+Q","genero":"M","celular":"0984050629","idTipoUsuario":null,"createdAt":1616039512599,"updatedAt":1616039512599,"id":3,"fecha_nacimiento":"2021-03-18T03:51:52.535Z","correo_electronico":"robert@hotmail.com","_id":3}
+TipoUsuario
+{"codigo":"ADM1","nombre":"Administrador","tipo":"Administrador","createdAt":1616039512599,"updatedAt":1616039512599,"id":1,"_id":1}
