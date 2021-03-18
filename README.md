@@ -1,8 +1,8 @@
-## Objetivo del Proyecto
+## Objetivos del Proyecto
 
-Ofrecer a los usuarios un simulador EAES para el ingreso a la Universidad en el Ecuador.
-Tomar preguntas actualizadas.
-Exponer resultados al usuario para su conocimiento de aciertos y fallos.
+- Ofrecer a los usuarios un simulador EAES para el ingreso a la Universidad en el Ecuador.
+- Tomar preguntas actualizadas.
+- Exponer resultados al usuario para su conocimiento de aciertos y fallos.
 
 ## Fundador del Proyecto
 
