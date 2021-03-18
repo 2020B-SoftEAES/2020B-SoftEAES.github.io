@@ -1,176 +1,109 @@
-## Welcome to GitHub Pages
+## Objetivo del Proyecto
 
-You can use the [editor on GitHub](https://github.com/2020B-SoftEAES/2020B-SoftEAES.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Ofrecer a los usuarios un simulador EAES para el ingreso a la Universidad en el Ecuador.
+Tomar preguntas actualizadas.
+Exponer resultados al usuario para su conocimiento de aciertos y fallos.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Fundador del Proyecto
 
-### Markdown
+William Suntaxi - CEO
+Lenin Miño - Gerente
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Licencia del Proyecto
 
-```markdown
-Syntax highlighted code block
+<div align="center"><img src="https://1.bp.blogspot.com/-IFwRwYUMdac/UqowjZzPPFI/AAAAAAAAAz0/fY_g6KdIhQ8/s400/foto%2Binicio%2Bcopy.png" height="100px" ></div>
 
-# Header 1
-## Header 2
-### Header 3
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-- Bulleted
-- List
+Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
 
-1. Numbered
-2. List
+Todo el mundo está autorizado a copiar y distribuir copias literales de este documento de licencia, pero cambiarlo no está permitido.
 
-**Bold** and _Italic_ and `Code` text
+Esta versión de la Licencia Pública General Menor de GNU incorpora los términos y condiciones de la versión 3 de la Licencia Pública General GNU, complementada por los permisos adicionales enumerados a continuación.
 
-[Link](url) and ![Image](src)
-```
+## Labels a usarse dentro del proyecto
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Programación
+- Bug
+- Documentación
+- Ambiente de Pruebas
+- Falta Conexión a la Base de Datos
+- Prioridad Alta
+- Prioridad Media
+- Prioridad Baja
 
-### Jekyll Themes
+## Descripción general del proyecto
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/2020B-SoftEAES/2020B-SoftEAES.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+El proyecto va ayudar a las empresas a llevar un control de efectividad de su personal en los procesos, asimismo permitira monitorear como se lleva a cabo la estrategia optada por la empresa en tiempo real. 
 
-### Support or Contact
+<div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2018/05/Indicadores-de-producci%C3%B3n1.jpg" height="100px"></div>
+  
+## Tipos de roles del proyecto
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<div align="center"><img src="https://2.bp.blogspot.com/-ddep97bgfj0/UPg3p16NgmI/AAAAAAAAHgI/cvr-vczq0TQ/s1600/roles.png" height="100px"></div>
 
+La comunidad del proyecto va tener Miembros, Colaboradas, desarrolladores y Líderes. Donde: 
 
+- El número de miembros no va tener límites del número de personas.
+- El número de Colaboradas va tener un límite de 200 personas.
+- El número de Desarrolladores va tener un límite de 100 personas. 
+- El número de Líderes va tener un límite de 25 personas.
 
-# Titulo 1
-## Titulo 2
-### Titulo 3
-#### Titulo 4
-##### Titulo 5
-###### Titulo 6
-
-Mi nombre es **William Suntaxi** y soy DJ de __música electrónica__
-
-## Listas Ordenadas
-
-Las listas ordenadas son las siguientes:
-
-1.  Lunes
-1.  Martes
-1.  Miercoles
-
-Las listas no ordenadas son las siguientes:
-
--  Manzanas
--  Peras
--  Piñas
-
-## Links
-
-Quiero ir a: [Google](http://www.google.com)
-
-Quiero ir a: [Google](http://www.google.com "Me gustan las papayas") y se mostrará un mensaje encima del link
-
-Imagen
-
-![Carro](https://i.pinimg.com/564x/d0/2d/75/d02d751140d2a878e7e8e05c1587355c.jpg "Otro mensajito")
-
-<img src="https://i.pinimg.com/564x/d0/2d/75/d02d751140d2a878e7e8e05c1587355c.jpg" height="300px">
-
-En `python` se puede crear variables vacias.
-
-```python
-print("Hola Mundo")
-```
-
-```javascript
-function comer(){
-}
-```
-
-```xml
-<hola fonetica="3">Como estas</hola>>
-```
-
-```
-$apt get install xxx
-$echo HOLA
-$apt update
-```
-
-## Tablas
+Después de esto, las personas recibirán un correo electrónico de los requisitos que se deben cumplir para suscribirse a la lista deseada. Las cuales son:
 
 
-| Nombre | Apellido
-| --- | ---  |
-| William  | Suntaxi |
-| Jorge  | Suntaxi |
+Para ser parte del equipos de los líderes, se debe enviar una solicitud al siguiente correo electrónico: lenin.mino@epn.edu.ec. Además, cumplir con los siguientes requisitos:
+- Ser un integrante activo por 6 meses.
+- Haber realizado 100 Commits en el repositorio del proyecto.
+- Haber solucionado 25 problemas detectados en la página web.
+- No haber infringido ninguna política de ética.
 
-## Quotes
 
-Cita uno
+Para ser parte del equipos de los desarrolladores, se debe enviar una solicitud a los siguientes correos electrónicos: lideres@softwarelibre.com y lenin.mino@epn.edu.ec. Además, cumplir con los siguientes requisitos:
+-	Ser un integrante activo por 3 meses.
+-	Haber realizado por lo menos 50 Commits en el repositorio del proyecto.
+-	Haber solucionado 20 problemas detectados en la página web.
+-	No haber infringido ninguna política de ética. 
 
-> LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARGUISIMA y pues mas y mas 
-> Igual sigue siendo parte de la cita
 
-Otra cita
+Para ser parte del equipos de los colaboradores, se debe enviar una solicitud a los siguientes correos electrónicos: lideres@softwarelibre.com, desarolladores@softwarelibre.com y lenin.mino@epn.edu.ec. Además, cumplir con los siguientes requisitos:
+-	Ser un integrante activo por 1 meses.
+-	Haber recomendado 40 soluciones a problemas detectados en la página web.
+-	No haber infringido ninguna política de ética. 
+Para ser parte del equipo de miembros, no se requiere cumplir ningún requisito. Solo estar interesado en conocer el proyecto de software libre. Con la excepción que no puede aportar en el desarrollo de código, solo de conocer todo el código y apoyar los problemas presentes y futuros.
 
-> uno
-> dos
-> tres
-> **William** `Suntaxi`
 
-## Lineas separadores y HTML
+El desarrollo del proyecto se llevará a cabo por medio de comités. Donde los equipos del proyecto serán los siguientes:
+-	Desarrollo
+-	Ambientes de Pruebas
+-	Documentación
+-	Base de Datos
+-	Administración de la Comunidad
+Con los integrantes de los equipos serán:
+-	5 líderes.
+-	20 desarrolladores.
+-	40 colaborados.
 
-Contenido
+## Tipo de gestión del proyecto
 
----
+Tipo: Democratico
+Donde los líderes van a tener la obligación de escuchar a todos los integrantes de su equipo para receptar las recomendaciones del desarrollo del proyecto. Después de esto los líderes tienen de igual forma la obligación de comparten cierta información con los demás líderes de cada equipo. 
+Con esto existe más probabilidad de mitigar próximos problemas y una solución más pronta de los mismos. También las sugerencias permiten mejorar el desarrollo del proyecto a una mayor velocidad donde todos participen y se sientan importantes en el equipo.
+Sobre la toma de decisiones, es indispensable que el grupo de líderes hayan realizado una reunión previa notificada vía correo electrónico a los fundadores del proyecto.
+En la implementación de código para el proyecto, Los líderes de cada equipo tiene la responsabilidad de validar el código de cada uno de sus integrantes antes de realizar la actualización/carga de código.
 
-Contenido
 
----
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-## SUSCRIPCIONES
+La revisión del formato del código debe cumplir con los siguientes puntos:
+-	Todas las funciones deben estar comentadas.
+-	Las líneas de código cambiada deben estar comentadas.
+-	Todo el código debe estar identado.
+-	Las variables utilizadas deben ser claras.
+-	El manejo de espacios debe ser el correcto.
 
-<p>Hola amigos **Como estas** <strong> COMO ESTAS </strong> </p>
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
-<div id="mc_embed_signup">
-<form action="https://epn.us7.list-manage.com/subscribe/post?u=6b67baf3df166a8546de04e0d&amp;id=f31755a6eb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Subscribe</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div>
-
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-
-<div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-
-<div class="mc-field-group size1of2">
-	<label for="mce-BIRTHDAY-month">Birthday </label>
-	<div class="datefield">
-		<span class="subfield monthfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"></span> / 
-		<span class="subfield dayfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span> 
-		<span class="small-meta nowrap">( mm / dd )</span>
-	</div>
-	
-</div>	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6b67baf3df166a8546de04e0d_f31755a6eb" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
+La licencia que deben ocupar para la creación de código debe ser GNU GPL 3.0, caso contrario no se aceptara la fusión con el código del proyecto.
+La comunicación del proyecto se va realizar mediante la aplicación de [Discord](https://discord.gg/zGQPyYNA).
+Ahí se encontrar los mismos roles especificados anteriormente, y los términos y condiciones que fueron enviados al correo electrónico.
+Este medio de comunicación solo es para tratar todos los temas relacionados del proyecto, si una persona comparte temas diferentes será baneada 1 día por primera vez, 1 semana por segunda vez, 1 mes por tercera vez y sacado del servidor por una cuarta vez.
+La solución de los problemas presentados (Bug) en el proyecto se puede realizar en el repositorio de GitHub. Donde se puede recomendar o dar solución al problema.
