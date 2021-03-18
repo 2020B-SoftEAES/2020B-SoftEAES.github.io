@@ -3,7 +3,6 @@ module.exports = {
   attributes: {
     id: {
       type: 'number',
-      required: true,
       unique: true,
       autoIncrement: true,
       columnType: 'int',

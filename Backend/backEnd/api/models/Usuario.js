@@ -3,7 +3,6 @@ module.exports = {
   attributes: {
     id: {
       type: 'number',
-      required: true,
       unique: true,
       autoIncrement: true,
       columnType: 'int',
@@ -52,6 +51,7 @@ module.exports = {
       type: 'String',
       columnName: 'correo_electronico',
       maxLength: 256,
+      unique: true,
       required: true,
       isEmail: true
     },
