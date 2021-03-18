@@ -126,4 +126,13 @@ Los recusos se van a gastar en el pago del esfuerzo a las personas, vamos a moti
 Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. Sobre todo vamos a invertir esos recursos en el proyecto, enfocandonos en las capacitaciones de nuevas tegnologias, para integrar en nuestro proyecto y llegar hacer el mejor Software Open Source con el mejor equipo.
 
 ## Estrategia de Versionamiento
+- Se hara uso de TAG(Etiquetas) en Github.
+- Nombres de Versiones mediante Números.
+    - Mediante 3 números: X.Y.Z y cada uno indica una cosa diferente:
+    - El primero (X) se le conoce como versión mayor y nos indica la versión principal del software. Ejemplo: 1.0.0, 3.0.0
+    - El segundo (Y) se le conoce como versión menor y nos indica nuevas funcionalidades. Ejemplo: 1.2.0, 3.3.0
+    - El tercero (Z) se le conoce como revisión y nos indica que se hizo una revisión del código por algún fallo. Ejemplo: 1.2.2, 3.3.4
+
+<div align="center"><img src="https://lh3.googleusercontent.com/proxy/HM6q9RZQg3HykoFGN1rzDp3D5nVnvZ4XSl3UwdzH3SgaEC0APaX5wIK1U7H5ZLSNwl1UqufXG4g871NXIO4wC6k3V1PS7m5_0BYdqW1nrSdkUrvErFveVPK2WlePw1LLA24DpzfDLFS7EacP9OnzePv8PEFFgLvCFxluKj7xHzTMjwDVdMxEBZhX_aHYWAvwcn6THwZTackrgYPzhT0Di2dtl8o" height="100px"></div>
+## Canal de Comunicación
 
