@@ -116,4 +116,14 @@ Nosotros creemos y confiamos en el dialogo para tener una misma visión y misió
 
 <div align="center"><img src="https://i2.wp.com/notodoesmatematicas.com/wp-content/uploads/consenso.jpg?fit=740%2C444&ssl=1" height="100px"></div>
 
+## Manera de Obtener Recursos
+Vamos a obtener recursos buscando Patrocinadores y donaciones mediante redes sociales o por la misma página web del proyecto.
+Los patrocinadores nos van ayudar exponiendo el proyecto a nuevos públicos, teniendo como resultado nuevas personas interesadas. Siendo su objetivo principal llamar la atención e incitar a la inversión de dinero en el proyecto, causando la integración de nuevas personas interesadas e ingresos económicos.
+Las donaciones nos va ayudar a tener ingresos económicos de usuarios externos, por medio de nuestra Red Social o comunicandose mediante un mensaje en GitHub.
+
+## Manera de Gastar Recursos
+Los recusos se van a gastar en el pago del esfuerzo a las personas, vamos a motivar a las personas. Mediante solución de Problemas presentados y actualizaciones nuevas.
+Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. Sobre todo vamos a invertir esos recursos en el proyecto, enfocandonos en las capacitaciones de nuevas tegnologias, para integrar en nuestro proyecto y llegar hacer el mejor Software Open Source con el mejor equipo.
+
+## Estrategia de Versionamiento
 
