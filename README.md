@@ -136,4 +136,5 @@ Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. So
 <div align="center"><img src="https://lh3.googleusercontent.com/proxy/HM6q9RZQg3HykoFGN1rzDp3D5nVnvZ4XSl3UwdzH3SgaEC0APaX5wIK1U7H5ZLSNwl1UqufXG4g871NXIO4wC6k3V1PS7m5_0BYdqW1nrSdkUrvErFveVPK2WlePw1LLA24DpzfDLFS7EacP9OnzePv8PEFFgLvCFxluKj7xHzTMjwDVdMxEBZhX_aHYWAvwcn6THwZTackrgYPzhT0Di2dtl8o" height="100px"></div>
 
 ## Canal de Comunicación
-Te invitamos a ingresar en nuestro canal de comunicación https://discord.gg/r25BzzejrG
+Se utiliza para los comunicados la aplicación DISCORD, por este Link puedes unirte y saber todo sobre el proyecto https://discord.gg/r25BzzejrG
+<div align="center"><img src="https://i.blogs.es/f0d535/discord/1366_2000.jpg" height="100px"></div>
