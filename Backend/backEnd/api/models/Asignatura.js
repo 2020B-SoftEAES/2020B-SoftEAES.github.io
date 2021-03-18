@@ -13,7 +13,7 @@ module.exports = {
       maxLength: 50,
       required: true
     },
-    asignatura:{
+    pregunta:{
       collection: 'Pregunta',
       via: 'idAsignatura'
     },
