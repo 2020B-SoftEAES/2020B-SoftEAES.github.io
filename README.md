@@ -35,9 +35,11 @@ Esta versión de la Licencia Pública General Menor de GNU incorpora los términ
 
 ## Descripción general del proyecto
 
-El proyecto va ayudar a las empresas a llevar un control de efectividad de su personal en los procesos, asimismo permitira monitorear como se lleva a cabo la estrategia optada por la empresa en tiempo real. 
+El proyecto va ayudar a los estudiantes para el ingreso a la Universdad, asimismo permitira entrenar las areas de conocimiento del examen como son Matematica, Fisica, Quimica, Sociales y Lenguaje. 
 
 <div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2018/05/Indicadores-de-producci%C3%B3n1.jpg" height="100px"></div>
+<div align="center"><img src="https://sites.google.com/site/ingresoalauniversidad124/_/rsrc/1381772602793/portada/AS-graduacion%20%285%29.png?height=250&width=320" height="100px"></div>
+
   
 ## Tipos de roles del proyecto
 
