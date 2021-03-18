@@ -89,7 +89,7 @@ Con los integrantes de los equipos serán:
 
 ## Tipo de gestión del proyecto
 
-Tipo: Democratico
+Tipo: Democratico,
 Donde los líderes van a tener la obligación de escuchar a todos los integrantes de su equipo para receptar las recomendaciones del desarrollo del proyecto. Después de esto los líderes tienen de igual forma la obligación de comparten cierta información con los demás líderes de cada equipo. 
 Con esto existe más probabilidad de mitigar próximos problemas y una solución más pronta de los mismos. También las sugerencias permiten mejorar el desarrollo del proyecto a una mayor velocidad donde todos participen y se sientan importantes en el equipo.
 Sobre la toma de decisiones, es indispensable que el grupo de líderes hayan realizado una reunión previa notificada vía correo electrónico a los fundadores del proyecto.
@@ -111,20 +111,20 @@ Este medio de comunicación solo es para tratar todos los temas relacionados del
 La solución de los problemas presentados (Bug) en el proyecto se puede realizar en el repositorio de GitHub. Donde se puede recomendar o dar solución al problema.
 
 ## Tipo de Manera de Tomar Desiciones
-Tipo:Consenso
-Donde los fundadres y el grupo de lideres van a exponer sus ideas, sugerencias en cada desición que se va tomar en el Proyecto. Los lideres tienen la obligación de igualmanera realizar un comite con los desarolladores para escuchar sus ideas, sugeencias. Tomando en cuenta la opinión de cada persona.
+Tipo:Consenso,
+Donde los fundadres y el grupo de lideres van a exponer sus ideas, sugerencias en cada desición que se va tomar en el Proyecto. Los lideres tienen la obligación de igualmanera realizar un comite con los desarolladores para escuchar sus ideas, sugeencias. Tomando en cuenta la opinión de todos los miembros del equipo.
 Nosotros creemos y confiamos en el dialogo para tener una misma visión y misión entre todos los miembros que conforman el equipo. Cada palabra dicha por cada integrante es un aporte para la solución del problema planteado, dando así paso a la Democracia.
 
 <div align="center"><img src="https://i2.wp.com/notodoesmatematicas.com/wp-content/uploads/consenso.jpg?fit=740%2C444&ssl=1" height="100px"></div>
 
 ## Manera de Obtener Recursos
-Vamos a obtener recursos buscando Patrocinadores y donaciones mediante redes sociales o por la misma página web del proyecto.
+Vamos a obtener recursos buscando Patrocinadores y Donaciones mediante redes sociales o por la misma página web del proyecto.
 Los patrocinadores nos van ayudar exponiendo el proyecto a nuevos públicos, teniendo como resultado nuevas personas interesadas. Siendo su objetivo principal llamar la atención e incitar a la inversión de dinero en el proyecto, causando la integración de nuevas personas interesadas e ingresos económicos.
 Las donaciones nos va ayudar a tener ingresos económicos de usuarios externos, por medio de nuestra Red Social o comunicandose mediante un mensaje en GitHub.
 
 ## Manera de Gastar Recursos
-Los recusos se van a gastar en el pago del esfuerzo a las personas, vamos a motivar a las personas. Mediante solución de Problemas presentados y actualizaciones nuevas.
-Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. Sobre todo vamos a invertir esos recursos en el proyecto, enfocandonos en las capacitaciones de nuevas tegnologias, para integrar en nuestro proyecto y llegar hacer el mejor Software Open Source con el mejor equipo.
+Los recusos se van a gastar en el pago del esfuerzo a las personas, vamos a motivar a las personas. Mediante la solución a cada Problema presentado y lanzamientos de actualizaciones.
+Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. Sobre todo vamos a invertir esos recursos en el proyecto, teniendo nuestro principal enfoque en la capacitación de nuevas tegnologias, para integrar en nuestro proyecto y llegar hacer el mejor Software Open Source con el mejor equipo de ultima generación.
 
 ## Estrategia de Versionamiento
 - Se hara uso de TAG(Etiquetas) en Github.
