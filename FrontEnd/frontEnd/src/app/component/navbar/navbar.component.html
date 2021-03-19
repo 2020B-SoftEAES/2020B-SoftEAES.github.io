@@ -9,17 +9,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link btn-sm" id="navbarEstudiante" href="#" data-toggle="modal" data-target="#myModalBuscar">
-            <i class="fa fa-users"></i> Estudiante
+          <a class="nav-link btn-sm" [routerLink]="['/main', 'estudiante']" id="navbarEstudiante" href="#" data-toggle="modal" data-target="#myModalBuscar">
+            <i class="fa fa-users" ></i> Estudiante
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-sm" id="navbarInstructor" href="#" data-toggle="modal" data-target="#modalFiltrar">
+          <a class="nav-link btn-sm" [routerLink]="['/main', 'instructor']" id="navbarInstructor" href="#" data-toggle="modal" data-target="#modalFiltrar">
             <i class="fa fa-address-book"></i> Instructivo
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-sm" id="navbarExamen" href="#" data-toggle="modal" data-target="#modalFiltrar">
+          <a class="nav-link btn-sm" [routerLink]="['/main', 'estudiante']" id="navbarExamen" href="#" data-toggle="modal" data-target="#modalFiltrar">
             <i class="fa fa-file-text"></i> Examen
           </a>
         </li>

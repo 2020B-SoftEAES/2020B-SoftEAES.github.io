@@ -55,10 +55,10 @@ module.exports = {
       required: true,
       isEmail: true
     },
-    idTipoUsuario:{
+    idTipoUsuario: {
       model: 'TipoUsuario'
     },
-    pruebaUsuario:{
+    pruebaUsuario: {
       collection: 'PruebaUsuario',
       via: 'idUsuario'
     }

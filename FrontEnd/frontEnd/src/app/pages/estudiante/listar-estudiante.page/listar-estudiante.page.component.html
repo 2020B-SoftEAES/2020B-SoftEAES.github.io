@@ -1,0 +1,50 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <h3 class="mb-0">
+            Estudiante
+            <a [routerLink]="['/main', 'crearEstudiante']" style="padding-left: 10px">
+              <button class="btn btn-outline-info"><i class="fa fa-plus-square"></i> Nuevo</button>
+            </a>
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+              <thead class="thead-light">
+              <tr>
+                <th scope="col">Cédula</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Correo Electrónico</th>
+                <th scope="col">Celular</th>
+                <th scope="col">Genero</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let estudiante of estudiantes">
+                  <td>{{estudiante.cedula}}</td>
+                  <td>{{estudiante.nombre}}  {{estudiante.apellido}}</td>
+                  <td>{{estudiante.email}}</td>
+                  <td>{{estudiante.celular}}</td>
+                  <td>{{estudiante.genero}}</td>
+                  <td>
+                    <a style="cursor: pointer"
+                       [routerLink]="['/main','editarEstudiante',estudiante.id]">
+                      <i ngbTooltip="Editar" class="fa fa-edit text-info fa-2x" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr class="my-4"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
