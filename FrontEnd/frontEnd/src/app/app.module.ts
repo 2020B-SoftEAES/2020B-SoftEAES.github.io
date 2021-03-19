@@ -15,6 +15,13 @@ import {EditarEstudiantePageComponent} from './pages/estudiante/editar-estudiant
 import { CrearInstructorPageComponent } from './pages/instructor/crear-instructor-page/crear-instructor-page.component';
 import { ListarInstructorPageComponent } from './pages/instructor/listar-instructor-page/listar-instructor-page.component';
 import { EditarInstructorPageComponent } from './pages/instructor/editar-instructor-page/editar-instructor-page.component';
+import { CrearExamenPageComponent } from './pages/examen/crear-examen-page/crear-examen-page.component';
+import { EditarExamenPageComponent } from './pages/examen/editar-examen-page/editar-examen-page.component';
+import { ListarExamenPageComponent } from './pages/examen/listar-examen-page/listar-examen-page.component';
+import { SimularExamenPageComponent } from './pages/examen/simular-examen-page/simular-examen-page.component';
+import { EstudianteExamenPageComponent } from './pages/examen/estudiante-examen-page/estudiante-examen-page.component';
+import { EstudianteVerExamenPageComponent } from './pages/examen/estudiante-ver-examen-page/estudiante-ver-examen-page.component';
+import { VisualizarExamenPageComponent } from './pages/examen/visualizar-examen-page/visualizar-examen-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +34,14 @@ import { EditarInstructorPageComponent } from './pages/instructor/editar-instruc
     EditarEstudiantePageComponent,
     CrearInstructorPageComponent,
     ListarInstructorPageComponent,
-    EditarInstructorPageComponent
+    EditarInstructorPageComponent,
+    CrearExamenPageComponent,
+    EditarExamenPageComponent,
+    ListarExamenPageComponent,
+    SimularExamenPageComponent,
+    EstudianteExamenPageComponent,
+    EstudianteVerExamenPageComponent,
+    VisualizarExamenPageComponent
   ],
   imports: [
     BrowserModule,

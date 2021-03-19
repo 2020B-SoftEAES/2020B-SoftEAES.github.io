@@ -23,6 +23,16 @@ module.exports = {
       maxLength: 50,
       required: true
     },
+    cupos: {
+      type: 'number',
+      columnType: 'int',
+      defaultsTo: 50
+    },
+    duracion: {
+      type: 'number',
+      columnType: 'int',
+      defaultsTo: 60
+    },
     pruebaPregunta:{
       collection: 'PruebaPregunta',
       via: 'idPrueba'

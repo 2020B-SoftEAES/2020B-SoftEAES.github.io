@@ -19,9 +19,10 @@ export class ListarInstructorPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.usuarioService.findAll().subscribe(usuarioDto => {
-        this.instructores = usuarioDto.filter(usuario => usuario.idTipoUsuario['id'] === AppConstant.ID_TIPO_USUARIO_INSTRUCTOR);
         if (this.instructores.length < 1) {
           this.alertMessageService.mensajeInfo('No existen instructores registrados');
+        } else {
+          this.instructores = usuarioDto.filter(usuario => usuario.idTipoUsuario['id'] === AppConstant.ID_TIPO_USUARIO_INSTRUCTOR);
         }
       },
       error1 => this.alertMessageService.mensajeError(AppConstant.MENSAJE_ERROR_CONEXION_SERVIDOR)
