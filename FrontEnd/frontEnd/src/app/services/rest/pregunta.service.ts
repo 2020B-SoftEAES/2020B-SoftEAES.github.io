@@ -20,33 +20,33 @@ export class PreguntaService {
   findAll(): Observable<PreguntaDto[]> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .get<PreguntaDto[]>(environment.url + this.nombreModelo, {headers});
+      .get<PreguntaDto[]>(environment.url + this.nombreModelo);
   }
 
   delete(id: number): Observable<PreguntaDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .delete<PreguntaDto>(environment.url + this.nombreModelo + `/${id}`, {headers});
+      .delete<PreguntaDto>(environment.url + this.nombreModelo + `/${id}`);
   }
 
   create(objeto: CrearPreguntaDto): Observable<PreguntaDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo;
     return this.httpClientService
-      .post<PreguntaDto>(url, objeto, {headers});
+      .post<PreguntaDto>(url, objeto);
   }
 
   findById(id: number): Observable<PreguntaDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo + '/id/' + id;
     return this.httpClientService
-      .get<PreguntaDto>(url, {headers});
+      .get<PreguntaDto>(url);
   }
 
   updateById(id: number, objeto: UpdatePreguntaDto): Observable<PreguntaDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo + '/' + id;
     return this.httpClientService
-      .put<PreguntaDto>(url, objeto, {headers});
+      .put<PreguntaDto>(url, objeto);
   }
 }

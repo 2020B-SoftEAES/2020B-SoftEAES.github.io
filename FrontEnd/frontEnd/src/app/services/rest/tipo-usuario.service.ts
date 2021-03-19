@@ -20,13 +20,13 @@ export class TipoUsuarioService {
   findAll(): Observable<TipoUsuarioDto[]> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .get<TipoUsuarioDto[]>(environment.url + this.nombreModelo, {headers});
+      .get<TipoUsuarioDto[]>(environment.url + this.nombreModelo);
   }
 
   findById(id: number): Observable<TipoUsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo + '/id/' + id;
     return this.httpClientService
-      .get<TipoUsuarioDto>(url, {headers});
+      .get<TipoUsuarioDto>(url);
   }
 }

@@ -1,0 +1,90 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <form class="was-validated" #formularioInstructorAct="ngForm"
+        novalidate>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">Instructor</h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreInstructorAct">Nombre *</label>
+                    <input type="text" id="nombreInstructorAct" name="nombreInstructorAct" maxlength="50" required
+                           [(ngModel)]="instructorDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="apellidoInstructorAct">Apellido *</label>
+                    <input type="text" id="apellidoInstructorAct" name="apellidoInstructorAct" maxlength="50" required
+                           [(ngModel)]="instructorDto.apellido" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="cedulaInstructorAct">Cédula *</label>
+                    <input type="text" id="cedulaInstructorAct" name="cedulaInstructorAct" maxlength="10" required
+                           [(ngModel)]="instructorDto.cedula" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contraseniaInstructorAct">Contraseña *</label>
+                    <input type="text" id="contraseniaInstructorAct" name="contraseniaInstructorAct" maxlength="16" required
+                           [(ngModel)]="instructorDto.contrasenia" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="celularInstructorAct">Celular *</label>
+                    <input type="text" id="celularInstructorAct" name="celularInstructorAct" maxlength="10" required
+                           [(ngModel)]="instructorDto.celular" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="emailInstructorAct">Correo electrónico *</label>
+                    <input type="email" id="emailInstructorAct" name="emailInstructorAct" maxlength="100" required
+                           [(ngModel)]="instructorDto.email" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="generoInstructorAct">Genero *</label>
+                    <select id="generoInstructorAct" name="generoInstructorAct"
+                            required [(ngModel)]="instructorDto.genero"
+                            class="form-control form-control-alternative">
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"/>
+            <div *ngIf="formularioInstructorAct.invalid">
+              <span
+                style="color:red;font-weight:lighter; font-size: smaller">Todos los campos con (*) son obligatorios</span>
+            </div>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button class="btn btn-outline-info"
+                          (click)="onClickGuardarInstructor(formularioInstructorAct)"
+                          [disabled]="formularioInstructorAct.invalid"><i class="fa fa-save"></i> Guardar instructor
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

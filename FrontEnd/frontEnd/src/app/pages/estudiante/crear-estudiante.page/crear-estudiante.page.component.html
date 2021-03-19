@@ -1,0 +1,98 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <form class="was-validated" #formularioEstudiante="ngForm"
+        novalidate>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">Estudiante</h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreEstudiante">Nombre *</label>
+                    <input type="text" id="nombreEstudiante" name="nombreEstudiante" maxlength="50" required
+                           [(ngModel)]="estudianteDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="apellidoEstudiante">Apellido *</label>
+                    <input type="text" id="apellidoEstudiante" name="apellidoEstudiante" maxlength="50" required
+                           [(ngModel)]="estudianteDto.apellido" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="cedulaEstudiante">Cédula *</label>
+                    <input type="text" id="cedulaEstudiante" name="cedulaEstudiante" maxlength="10" required
+                           [(ngModel)]="estudianteDto.cedula" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contraseniaEstudiante">Contraseña *</label>
+                    <input type="text" id="contraseniaEstudiante" name="contraseniaEstudiante" maxlength="16" required
+                           [(ngModel)]="estudianteDto.contrasenia" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="celularEstudiante">Celular *</label>
+                    <input type="text" id="celularEstudiante" name="celularEstudiante" maxlength="10" required
+                           [(ngModel)]="estudianteDto.celular" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="emailEstudiante">Correo electrónico *</label>
+                    <input type="email" id="emailEstudiante" name="emailEstudiante" maxlength="100" required
+                           [(ngModel)]="estudianteDto.email" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fechaNacimientoEstudiante">Fecha de Nacimiento *</label>
+                    <input type="date" id="fechaNacimientoEstudiante" name="fechaNacimientoEstudiante"
+                           #fechaNacimiento="ngModel" required [(ngModel)]="estudianteDto.fechaNacimiento"
+                           class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="generoEstudiante">Genero *</label>
+                    <select id="generoEstudiante" name="generoEstudiante"
+                           required [(ngModel)]="estudianteDto.genero"
+                           class="form-control form-control-alternative">
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"/>
+            <div *ngIf="formularioEstudiante.invalid">
+              <span
+                style="color:red;font-weight:lighter; font-size: smaller">Todos los campos con (*) son obligatorios</span>
+            </div>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button class="btn btn-outline-info"
+                          (click)="onClickGuardarEstudiante(formularioEstudiante)"
+                          [disabled]="formularioEstudiante.invalid"><i class="fa fa-save"></i> Guardar estudiante
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

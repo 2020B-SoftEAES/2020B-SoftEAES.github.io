@@ -32,7 +32,6 @@ export interface UpdateUsuarioDto {
   cedula: string;
   contrasenia: string;
   genero: string;
-  fechaNacimiento: Date;
   celular: string;
   email: string;
 }

@@ -1,0 +1,98 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <form class="was-validated" #formularioInstructor="ngForm"
+        novalidate>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">Instructor</h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreInstructor">Nombre *</label>
+                    <input type="text" id="nombreInstructor" name="nombreInstructor" maxlength="50" required
+                           [(ngModel)]="instructorDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="apellidoInstructor">Apellido *</label>
+                    <input type="text" id="apellidoInstructor" name="apellidoInstructor" maxlength="50" required
+                           [(ngModel)]="instructorDto.apellido" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="cedulaInstructor">Cédula *</label>
+                    <input type="text" id="cedulaInstructor" name="cedulaInstructor" maxlength="10" required
+                           [(ngModel)]="instructorDto.cedula" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contraseniaInstructor">Contraseña *</label>
+                    <input type="text" id="contraseniaInstructor" name="contraseniaInstructor" maxlength="16" required
+                           [(ngModel)]="instructorDto.contrasenia" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="celularInstructor">Celular *</label>
+                    <input type="text" id="celularInstructor" name="celularInstructor" maxlength="10" required
+                           [(ngModel)]="instructorDto.celular" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="emailInstructor">Correo electrónico *</label>
+                    <input type="email" id="emailInstructor" name="emailInstructor" maxlength="100" required
+                           [(ngModel)]="instructorDto.email" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fechaNacimientoInstructor">Fecha de Nacimiento *</label>
+                    <input type="date" id="fechaNacimientoInstructor" name="fechaNacimientoInstructor"
+                           #fechaNacimiento="ngModel" required [(ngModel)]="instructorDto.fechaNacimiento"
+                           class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="generoInstructor">Genero *</label>
+                    <select id="generoInstructor" name="generoInstructor"
+                            required [(ngModel)]="instructorDto.genero"
+                            class="form-control form-control-alternative">
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"/>
+            <div *ngIf="formularioInstructor.invalid">
+              <span
+                style="color:red;font-weight:lighter; font-size: smaller">Todos los campos con (*) son obligatorios</span>
+            </div>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button class="btn btn-outline-info"
+                          (click)="onClickGuardarInstructor(formularioInstructor)"
+                          [disabled]="formularioInstructor.invalid"><i class="fa fa-save"></i> Guardar instructor
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,90 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <form class="was-validated" #formularioEstudianteAct="ngForm"
+        novalidate>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">Estudiante</h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreEstudianteAct">Nombre *</label>
+                    <input type="text" id="nombreEstudianteAct" name="nombreEstudianteAct" maxlength="50" required
+                           [(ngModel)]="estudianteDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="apellidoEstudianteAct">Apellido *</label>
+                    <input type="text" id="apellidoEstudianteAct" name="apellidoEstudianteAct" maxlength="50" required
+                           [(ngModel)]="estudianteDto.apellido" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="cedulaEstudianteAct">Cédula *</label>
+                    <input type="text" id="cedulaEstudianteAct" name="cedulaEstudianteAct" maxlength="10" required
+                           [(ngModel)]="estudianteDto.cedula" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contraseniaEstudianteAct">Contraseña *</label>
+                    <input type="text" id="contraseniaEstudianteAct" name="contraseniaEstudianteAct" maxlength="16" required
+                           [(ngModel)]="estudianteDto.contrasenia" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="celularEstudianteAct">Celular *</label>
+                    <input type="text" id="celularEstudianteAct" name="celularEstudianteAct" maxlength="10" required
+                           [(ngModel)]="estudianteDto.celular" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="emailEstudianteAct">Correo electrónico *</label>
+                    <input type="email" id="emailEstudianteAct" name="emailEstudianteAct" maxlength="100" required
+                           [(ngModel)]="estudianteDto.email" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="generoEstudianteAct">Genero *</label>
+                    <select id="generoEstudianteAct" name="generoEstudianteAct"
+                            required [(ngModel)]="estudianteDto.genero"
+                            class="form-control form-control-alternative">
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"/>
+            <div *ngIf="formularioEstudianteAct.invalid">
+              <span
+                style="color:red;font-weight:lighter; font-size: smaller">Todos los campos con (*) son obligatorios</span>
+            </div>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button class="btn btn-outline-info"
+                          (click)="onClickGuardarEstudiante(formularioEstudianteAct)"
+                          [disabled]="formularioEstudianteAct.invalid"><i class="fa fa-save"></i> Guardar estudiante
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

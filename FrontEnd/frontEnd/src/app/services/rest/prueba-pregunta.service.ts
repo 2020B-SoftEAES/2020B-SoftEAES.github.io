@@ -20,6 +20,6 @@ export class PruebaPreguntaService {
   findAll(): Observable<PruebaPreguntaDto[]> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .get<PruebaPreguntaDto[]>(environment.url + this.nombreModelo, {headers});
+      .get<PruebaPreguntaDto[]>(environment.url + this.nombreModelo);
   }
 }
