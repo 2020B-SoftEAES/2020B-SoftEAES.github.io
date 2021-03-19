@@ -20,13 +20,13 @@ export class UsuarioService {
   findAll(): Observable<UsuarioDto[]> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .get<UsuarioDto[]>(environment.url + this.nombreModelo, {headers});
+      .get<UsuarioDto[]>(environment.url + this.nombreModelo);
   }
 
   delete(id: number): Observable<UsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .delete<UsuarioDto>(environment.url + this.nombreModelo + `/${id}`, {headers});
+      .delete<UsuarioDto>(environment.url + this.nombreModelo + `/${id}`);
   }
 
   create(objeto: CrearUsuarioDto): Observable<UsuarioDto> {
@@ -40,13 +40,13 @@ export class UsuarioService {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo + '/id/' + id;
     return this.httpClientService
-      .get<UsuarioDto>(url, {headers});
+      .get<UsuarioDto>(url);
   }
 
   updateById(id: number, objeto: UpdateUsuarioDto): Observable<UsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo + '/' + id;
     return this.httpClientService
-      .put<UsuarioDto>(url, objeto, {headers});
+      .put<UsuarioDto>(url, objeto);
   }
 }

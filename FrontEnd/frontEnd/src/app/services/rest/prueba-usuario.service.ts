@@ -20,26 +20,26 @@ export class PruebaUsuarioService {
   findAll(): Observable<PruebaUsuarioDto[]> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .get<PruebaUsuarioDto[]>(environment.url + this.nombreModelo, {headers});
+      .get<PruebaUsuarioDto[]>(environment.url + this.nombreModelo);
   }
 
   delete(id: number): Observable<PruebaUsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     return this.httpClientService
-      .delete<PruebaUsuarioDto>(environment.url + this.nombreModelo + `/${id}`, {headers});
+      .delete<PruebaUsuarioDto>(environment.url + this.nombreModelo + `/${id}`);
   }
 
   create(objeto: CrearPruebaUsuarioDto): Observable<PruebaUsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo;
     return this.httpClientService
-      .post<PruebaUsuarioDto>(url, objeto, {headers});
+      .post<PruebaUsuarioDto>(url, objeto);
   }
 
   findById(id: number): Observable<PruebaUsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
     const url = environment.url + this.nombreModelo + '/id/' + id;
     return this.httpClientService
-      .get<PruebaUsuarioDto>(url, {headers});
+      .get<PruebaUsuarioDto>(url);
   }
 }
