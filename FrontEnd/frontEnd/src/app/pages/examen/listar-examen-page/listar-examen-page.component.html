@@ -1,0 +1,56 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <h3 class="mb-0">
+            Examen
+            <a [routerLink]="['/main', 'crearExamen']" style="padding-left: 10px">
+              <button class="btn btn-outline-info"><i class="fa fa-plus-square"></i> Nuevo</button>
+            </a>
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+              <thead class="thead-light">
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Nombre Categoría</th>
+                <th scope="col">Número Preguntas</th>
+                <th scope="col">Número Cupos</th>
+                <th scope="col">Duración(minutos)</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let estudiante of examenes">
+                <td>{{estudiante.codigo}}</td>
+                <td>{{estudiante.nombre}}</td>
+                <td>{{estudiante.tipo}}</td>
+                <td>{{estudiante.pruebaPregunta.length}}</td>
+                <td>{{estudiante.cupos}}</td>
+                <td>{{estudiante.duracion}}</td>
+                <td>
+                  <a style="cursor: pointer; padding-right: 7px"
+                     [routerLink]="['/main','editarExamen',estudiante.id]" >
+                    <i ngbTooltip="Editar" class="fa fa-edit text-info fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a style="cursor: pointer"
+                     [routerLink]="['/main','verExamen',estudiante.id]">
+                    <i ngbTooltip="Ver" class="fa fa-eye text-info fa-2x" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr class="my-4"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

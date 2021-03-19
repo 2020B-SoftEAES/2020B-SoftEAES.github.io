@@ -1,0 +1,185 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <form class="was-validated" #formularioExamen="ngForm"
+        novalidate>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">Examen
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                      data-target="#modal_detalle_sp"><i class="fa fa-plus-square"></i> Agregar Pregunta
+              </button>
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="codigoExamen">Código *</label>
+                    <input type="text" id="codigoExamen" name="codigoExamen" maxlength="10" required
+                           [(ngModel)]="pruebaDto.codigo" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreExamen">Nombre *</label>
+                    <input type="text" id="nombreExamen" name="nombreExamen" maxlength="50" required
+                           [(ngModel)]="pruebaDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="tipoExamen">Categoría *</label>
+                    <input type="text" id="tipoExamen" name="tipoExamen" maxlength="50" required
+                           [(ngModel)]="pruebaDto.tipo" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="cuposExamen">Cupos *</label>
+                    <input type="number" min="0" id="cuposExamen" name="cuposExamen" max="500" required
+                           [(ngModel)]="pruebaDto.cupos" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="duracionExamen">Duración en minutos *</label>
+                    <input type="number" min="0" id="duracionExamen" name="duracionExamen" max="300" required
+                           [(ngModel)]="pruebaDto.duracion" class="form-control form-control-alternative">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="formularioExamen.invalid">
+              <span
+                style="color:red;font-weight:lighter; font-size: smaller">Todos los campos con (*) son obligatorios</span>
+            </div>
+            <hr class="my-4"/>
+            <div *ngFor="let pregunta of pruebaDto.preguntas; index as i">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="mb-0">
+                    {{pregunta.codigo}}. {{pregunta.descripcion}} <span class="text-success" style="font-size: small">Puntaje: {{pregunta.puntaje}}</span>
+                  </h5>
+                </div>
+                <ol>
+                  <li>{{pregunta.opcion1}}</li>
+                  <li>{{pregunta.opcion2}}</li>
+                  <li>{{pregunta.opcion3}}</li>
+                  <li>{{pregunta.opcion4}}</li>
+                </ol>
+                <div class="col-12">
+                  <span class="text-primary text-sm-left">Respuesta: {{pregunta.respuestaCorrecta}} </span>
+                  <button class="btn btn-outline-danger"
+                          (click)="onClickDeletePregunta(i)"><i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <br>
+            </div>
+            <hr class="my-4"/>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button class="btn btn-outline-info"
+                          (click)="onClickGuardarExamen(formularioExamen)"
+                          [disabled]="formularioExamen.invalid || pruebaDto.preguntas.length<1"><i class="fa fa-save"></i> Guardar examen
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<form class="was-validated" #formularioPregunta="ngForm"
+      novalidate>
+  <div class="modal fade" id="modal_detalle_sp" tabindex="-1" role="dialog" aria-labelledby="modal_detalle_sp_label"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal_detalle_sp_label">Nueva Pregunta</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="codigoPregunta">Código *</label>
+                <input type="text" id="codigoPregunta" name="codigoPregunta" maxlength="10" required
+                       [(ngModel)]="preguntaDto.codigo" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="descripcionPregunta">Descripcion *</label>
+                <input type="text" id="descripcionPregunta" name="descripcionPregunta" maxlength="1024" required
+                       [(ngModel)]="preguntaDto.descripcion" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="opcion1Pregunta">Opción 1 *</label>
+                <input type="text" id="opcion1Pregunta" name="opcion1Pregunta" maxlength="1024" required
+                       [(ngModel)]="preguntaDto.opcion1" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="opcion2Pregunta">Opción 2 *</label>
+                <input type="text" id="opcion2Pregunta" name="opcion2Pregunta" maxlength="1024" required
+                       [(ngModel)]="preguntaDto.opcion2" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="opcion3Pregunta">Opción 3</label>
+                <input type="text" id="opcion3Pregunta" name="opcion3Pregunta" maxlength="1024"
+                       [(ngModel)]="preguntaDto.opcion3" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="opcion4Pregunta">Opción 4</label>
+                <input type="text" id="opcion4Pregunta" name="opcion4Pregunta" maxlength="1024"
+                       [(ngModel)]="preguntaDto.opcion4" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="respuestaCorrectaPregunta">Respuesta Correcta *</label>
+                <input type="number" min="1" id="respuestaCorrectaPregunta" name="respuestaCorrectaPregunta" max="4" required
+                       [(ngModel)]="preguntaDto.respuestaCorrecta" class="form-control form-control-alternative">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="puntajePregunta">Puntaje *</label>
+                <input type="number" min="0" id="puntajePregunta" name="puntajePregunta" max="50" required
+                       [(ngModel)]="preguntaDto.puntaje" class="form-control form-control-alternative">
+              </div>
+            </div>
+          </div>
+          <div *ngIf="formularioPregunta.invalid">
+              <span
+                style="color:red;font-weight:lighter; font-size: smaller">Todos los campos con (*) son obligatorios</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="onClickCancelar()">Cancelar</button>
+          <button class="btn btn-primary" (click)="onClickAgregar(formularioPregunta)"
+                  [disabled]="formularioPregunta.invalid">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
