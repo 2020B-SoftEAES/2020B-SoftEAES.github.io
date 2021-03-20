@@ -55,21 +55,21 @@ La comunidad del proyecto va tener Miembros, Colaboradas, desarrolladores y Líd
 Después de esto, las personas recibirán un correo electrónico de los requisitos que se deben cumplir para suscribirse a la lista deseada. Las cuales son:
 
 
-Para ser parte del equipos de los líderes, se debe enviar una solicitud al siguiente correo electrónico: lenin.mino@epn.edu.ec. Además, cumplir con los siguientes requisitos:
+Para ser parte del equipos de los líderes, se debe enviar una solicitud al siguiente correo electrónico: admin@softwarelibre.com. Además, cumplir con los siguientes requisitos:
 - Ser un integrante activo por 6 meses.
 - Haber realizado 100 Commits en el repositorio del proyecto.
 - Haber solucionado 25 problemas detectados en la página web.
 - No haber infringido ninguna política de ética.
 
 
-Para ser parte del equipos de los desarrolladores, se debe enviar una solicitud a los siguientes correos electrónicos: lideres@softwarelibre.com y lenin.mino@epn.edu.ec. Además, cumplir con los siguientes requisitos:
+Para ser parte del equipos de los desarrolladores, se debe enviar una solicitud a los siguientes correos electrónicos: lideres@softwarelibre.com y admin@softwarelibre.com. Además, cumplir con los siguientes requisitos:
 -	Ser un integrante activo por 3 meses.
 -	Haber realizado por lo menos 50 Commits en el repositorio del proyecto.
 -	Haber solucionado 20 problemas detectados en la página web.
 -	No haber infringido ninguna política de ética. 
 
 
-Para ser parte del equipos de los colaboradores, se debe enviar una solicitud a los siguientes correos electrónicos: lideres@softwarelibre.com, desarolladores@softwarelibre.com y lenin.mino@epn.edu.ec. Además, cumplir con los siguientes requisitos:
+Para ser parte del equipos de los colaboradores, se debe enviar una solicitud a los siguientes correos electrónicos: lideres@softwarelibre.com, desarolladores@softwarelibre.com y admin@softwarelibre.com. Además, cumplir con los siguientes requisitos:
 -	Ser un integrante activo por 1 meses.
 -	Haber recomendado 40 soluciones a problemas detectados en la página web.
 -	No haber infringido ninguna política de ética. 
