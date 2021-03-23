@@ -5,6 +5,7 @@
 - Ofrecer a los usuarios un simulador de examenes para el ingreso a la Universidad en el Ecuador.
 - Brindar preguntas actualizadas.
 - Exponer resultados al usuario para su conocimiento de aciertos y fallos.
+- Permitir entrenar a los usuarios para la evaluación de ingreso a la Educación Superiror en el Ecuador.
 
 ## Fundador del Proyecto
 
