@@ -33,7 +33,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     canActivate: [AutenticacionGuard],
     children: [
-      {path: '', pathMatch: 'full', redirectTo: 'estudiante'},
+      //{path: '', pathMatch: 'full', redirectTo: 'estudiante'},
       {path: 'estudiante', component: ListarEstudiantePageComponent, canActivate: [AutenticacionGuard]},
       {path: 'crearEstudiante', component: CrearEstudiantePageComponent, canActivate: [AutenticacionGuard]},
       {path: 'editarEstudiante/:id', component: EditarEstudiantePageComponent, canActivate: [AutenticacionGuard]},

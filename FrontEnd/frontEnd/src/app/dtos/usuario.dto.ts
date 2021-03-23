@@ -1,4 +1,5 @@
 import {PruebaUsuarioDto} from './prueba-usuario.dto';
+import {TipoUsuarioDto} from './tipo-usuario.dto';
 
 export interface UsuarioDto {
   id: number;
@@ -10,7 +11,7 @@ export interface UsuarioDto {
   fechaNacimiento: Date;
   celular: string;
   email: string;
-  idTipoUsuario: number;
+  idTipoUsuario: number | TipoUsuarioDto;
   pruebaUsuario: PruebaUsuarioDto[];
 }
 

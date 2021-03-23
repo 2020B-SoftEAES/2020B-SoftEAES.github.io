@@ -8,27 +8,27 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="roles.includes(CODIGO_MODULO_ESTUDIANTE)">
           <a class="nav-link btn-sm" [routerLink]="['/main', 'estudiante']" id="navbarEstudiante" href="#" data-toggle="modal" data-target="#myModalBuscar">
             <i class="fa fa-users" ></i> Estudiante
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="roles.includes(CODIGO_MODULO_INSTRUCTOR)">
           <a class="nav-link btn-sm" [routerLink]="['/main', 'instructor']" id="navbarInstructor" href="#" data-toggle="modal" data-target="#modalFiltrar">
             <i class="fa fa-address-book"></i> Instructivo
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="roles.includes(CODIGO_MODULO_EXAMEN)">
           <a class="nav-link btn-sm" [routerLink]="['/main', 'examen']" id="navbarExamen" href="#" data-toggle="modal" data-target="#modalFiltrar">
             <i class="fa fa-file-text"></i> Examen
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="roles.includes(CODIGO_MODULO_EXAMEN_RENDIDO)">
           <a class="nav-link btn-sm" [routerLink]="['/main', 'estudianteExamen']" id="navbarExamenEst" href="#" data-toggle="modal" data-target="#modalFiltrar">
             <i class="fa fa-file-text"></i> Examenes Rendidos
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="roles.includes(CODIGO_MODULO_SIMULADOR)">
           <a class="nav-link btn-sm" [routerLink]="['/main', 'estudianteExamenSimulador']" id="navbarSimulador" href="#" data-toggle="modal" data-target="#modalFiltrar">
             <i class="fa fa-file-text"></i> Simulador
           </a>

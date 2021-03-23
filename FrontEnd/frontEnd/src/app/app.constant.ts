@@ -15,4 +15,30 @@ export class AppConstant {
   static readonly ID_TIPO_USUARIO_ESTUDIANTE = 3;
 
   static readonly EXAMEN_ESTADO_HABILITADO = 1;
+
+  // ROLES ESTATICOS A NIVEL DE FRONTEND
+  static readonly CODIGO_MODULO_ESTUDIANTE = 'MOES';
+  static readonly CODIGO_MODULO_INSTRUCTOR = 'MOIN';
+  static readonly CODIGO_MODULO_EXAMEN = 'MOEX';
+  static readonly CODIGO_MODULO_EXAMEN_RENDIDO = 'MOEXREN';
+  static readonly CODIGO_MODULO_SIMULADOR = 'MOSI';
+
+  static readonly CODIGO_TIPO_USUARIO_ADIMINSTRADOR = 'ADM1';
+  static readonly CODIGO_TIPO_USUARIO_ESTUDIANTE = 'ADM3';
+  static readonly CODIGO_TIPO_USUARIO_INSTRUCTOR = 'ADM2';
+  static readonly ROL_ADMINISTRADOR = [
+    AppConstant.CODIGO_MODULO_ESTUDIANTE,
+    AppConstant.CODIGO_MODULO_INSTRUCTOR,
+    AppConstant.CODIGO_MODULO_EXAMEN,
+    AppConstant.CODIGO_MODULO_EXAMEN_RENDIDO,
+    AppConstant.CODIGO_MODULO_SIMULADOR
+  ];
+  static readonly ROL_ESTUDIANTE = [
+    AppConstant.CODIGO_MODULO_EXAMEN_RENDIDO,
+    AppConstant.CODIGO_MODULO_SIMULADOR
+  ];
+  static readonly ROL_INSTRUCTOR = [
+    AppConstant.CODIGO_MODULO_ESTUDIANTE,
+    AppConstant.CODIGO_MODULO_EXAMEN
+  ];
 }
