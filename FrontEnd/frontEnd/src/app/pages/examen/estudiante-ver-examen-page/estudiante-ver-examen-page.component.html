@@ -1,1 +1,77 @@
-<p>estudiante-ver-examen-page works!</p>
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+            <h3 class="mb-0">Examen - {{pruebaDto.codigo}}
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreExamen">Nombre </label>
+                    <input type="text" id="nombreExamen" name="nombreExamen" disabled
+                           [(ngModel)]="pruebaDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="tipoExamen">Categoría </label>
+                    <input type="text" id="tipoExamen" name="tipoExamen" disabled
+                           [(ngModel)]="pruebaDto.tipo" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="duracionExamen">Puntaje obtenido</label>
+                    <input type="number" id="duracionExamen" name="duracionExamen" disabled
+                           [(ngModel)]="pruebaUsuarioDto.puntajeObtenido" class="form-control form-control-alternative">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"/>
+            <div *ngFor="let pregunta of preguntas; index as i">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="mb-0">
+                    {{pregunta.codigo}}. {{pregunta.descripcion}} <span class="text-primary" style="font-size: small">
+                    Puntaje: {{ pregunta.respuestaCorrecta==respuestas[i]? pregunta.puntaje : 0}}</span>
+                  </h5>
+                </div>
+                <div class="col-12">
+                  <ol style="font-family: Calibri">
+                    <li [style]="pregunta.respuestaCorrecta==1 && respuestas[i]==1 ?
+                     'color:green' : respuestas[i]==1 ? 'color:red' : 'color:gray'">{{pregunta.opcion1}}</li>
+                    <li [style]="pregunta.respuestaCorrecta==2 && respuestas[i]==2 ?
+                     'color:green' : respuestas[i]==2 ? 'color:red' : 'color:gray'">{{pregunta.opcion2}}</li>
+                    <li [style]="pregunta.respuestaCorrecta==3 && respuestas[i]==3 ?
+                     'color:green' : respuestas[i]==3 ? 'color:red' : 'color:gray'">{{pregunta.opcion3}}</li>
+                    <li [style]="pregunta.respuestaCorrecta==4 && respuestas[i]==4 ?
+                     'color:green' : respuestas[i]==4 ? 'color:red' : 'color:gray'">{{pregunta.opcion4}}</li>
+                  </ol>
+                </div>
+                <div class="col-12">
+                  <span class="text-success text-sm-left">Respuesta es la opción: {{pregunta.respuestaCorrecta}} </span>
+                </div>
+              </div>
+              <br>
+            </div>
+            <hr class="my-4"/>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button type="button" class="btn btn-outline-info" [routerLink]="['/main', 'estudianteExamen']">
+                    <i class="fa fa-undo"></i> Regresar
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

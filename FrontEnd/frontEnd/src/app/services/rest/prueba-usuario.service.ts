@@ -38,7 +38,7 @@ export class PruebaUsuarioService {
 
   findById(id: number): Observable<PruebaUsuarioDto> {
     const headers = new HttpHeaders({Authorization: this.autenticacionService.sesionDto.accessToken});
-    const url = environment.url + this.nombreModelo + '/id/' + id;
+    const url = environment.url + this.nombreModelo + '/' + id;
     return this.httpClientService
       .get<PruebaUsuarioDto>(url);
   }
