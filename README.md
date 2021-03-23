@@ -35,7 +35,7 @@ Esta versión de la Licencia Pública General Menor de GNU incorpora los términ
 
 ## Descripción general del proyecto
 
-El proyecto va ayudar a los estudiantes para el ingreso a la Universdad, asimismo permitira entrenarse en las areas de conocimiento del examen como son Matematica, Fisica, Quimica, Sociales y Lenguaje. Se permitira conocer su aciertos y fallos en cada pregunta, para que puedan reforzarlo en caso que lo requiera por su cuenta o medainte un curso sugerido.
+ES una plataforma educativa para los estudiantes interesados en el ingreso a la Universdad, permitiendo aprender las areas de conocimiento del examen como son Matematica, Fisica, Quimica, Sociales y Lenguaje.Dando a conocer a los estudiantes la calificaciòn con sus respectivos aciertos y fallos en cada pregunta, para que puedan reforzarlo en caso que lo requiera por su cuenta o medainte un curso sugerido.
 
 <div align="center"><img src="https://sites.google.com/site/ingresoalauniversidad124/_/rsrc/1381772602793/portada/AS-graduacion%20%285%29.png?height=250&width=320" height="100px"></div>
 
