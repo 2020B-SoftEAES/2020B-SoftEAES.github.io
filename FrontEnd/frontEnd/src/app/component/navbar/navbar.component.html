@@ -1,6 +1,6 @@
 <header class="header" style="margin-top: -5px">
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#" [routerLink]="['/main']">
       <img class="logo-header" src="assets/img/logo.jpg"  alt="Logo"><span style="font-family: 'Calibri'"> CENCAP</span>
     </a>
     <button id="navBarMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
           </div>
         </li>-->
       </ul>
-      <a class="btn-sm" data-toggle="modal"  style="color: white">
+      <a class="btn-sm"  style="color: white" (click)="logOut()">
         Log Out <i class="fa fa-sign-out"></i>
       </a>
     </div>

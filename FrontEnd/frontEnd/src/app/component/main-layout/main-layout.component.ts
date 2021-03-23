@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AutenticacionService} from '../../services/autenticacion.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main-layout',
@@ -8,7 +10,6 @@ import { Component, OnInit } from '@angular/core';
 export class MainLayoutComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
