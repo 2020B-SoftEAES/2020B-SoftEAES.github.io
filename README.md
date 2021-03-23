@@ -125,6 +125,17 @@ Las donaciones nos va ayudar a tener ingresos económicos de usuarios externos, 
 Los recusos se van a gastar en el pago del esfuerzo a las personas, vamos a motivar a las personas. Mediante la solución a cada Problema presentado y lanzamientos de actualizaciones.
 Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. Sobre todo vamos a invertir esos recursos en el proyecto, teniendo nuestro principal enfoque en la capacitación de nuevas tegnologias, para integrar en nuestro proyecto y llegar hacer el mejor Software Open Source con el mejor equipo de ultima generación.
 
+## Estrategia de Ramas
+- Se utilizara Estrategia basada en entornos
+Donde existe: 
+- Entorno de desarrollo.
+- Entorno de preproducción.
+- Entorno de producción. 
+
+Por cada entorno se tendra una rama. Donde partimos de la rama master, que es la que tenemos para desarrollar y creamos una rama con una nueva funcionalidad. Cuando la funcionalidad esta terminada, volvemos a mezclar con master. Cuando queremos subir a producción, mergeamos la rama master con la rama del entorno de preproducción. Probamos en preproducción que todo esté listo y mergeamos con la rama de producción cuando queramos subir a real.
+
+<div align="center"><img src="https://lh3.googleusercontent.com/-i1CVBrIN3lQ/VmP4jddG5XI/AAAAAAAAB00/o2kUbQQsx6Q/s400-Ic42/pic4.jpg" height="100px"></div>
+
 ## Estrategia de Versionamiento
 - Se hara uso de TAG(Etiquetas) en Github.
 - Nombres de Versiones mediante Números.
