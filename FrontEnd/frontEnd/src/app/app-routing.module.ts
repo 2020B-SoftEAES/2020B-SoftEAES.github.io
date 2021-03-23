@@ -16,6 +16,7 @@ import {EstudianteExamenPageComponent} from './pages/examen/estudiante-examen-pa
 import {EstudianteVerExamenPageComponent} from './pages/examen/estudiante-ver-examen-page/estudiante-ver-examen-page.component';
 import {VisualizarExamenPageComponent } from './pages/examen/visualizar-examen-page/visualizar-examen-page.component';
 import {ExamenesSimularPageComponent} from './pages/examen/examenes-simular-page/examenes-simular-page.component';
+import {AutenticacionGuard} from './guard/autenticacion.guard';
 
 const routes: Routes = [
   {
@@ -30,6 +31,7 @@ const routes: Routes = [
   {
     path: 'main',
     component: MainLayoutComponent,
+    canActivate: [AutenticacionGuard],
     children: [
       {path: '', pathMatch: 'full', redirectTo: 'estudiante'},
       {path: 'estudiante', component: ListarEstudiantePageComponent},
