@@ -22,23 +22,11 @@ Todo el mundo está autorizado a copiar y distribuir copias literales de este do
 
 Esta versión de la Licencia Pública General Menor de GNU incorpora los términos y condiciones de la versión 3 de la Licencia Pública General GNU, complementada por los permisos adicionales enumerados a continuación.
 
-## Labels a usarse dentro del proyecto
-
-- Programación
-- Bug
-- Documentación
-- Ambiente de Pruebas
-- Falta Conexión a la Base de Datos
-- Prioridad Alta
-- Prioridad Media
-- Prioridad Baja
-
 ## Descripción general del proyecto
 
 Es una plataforma educativa para los estudiantes interesados en el ingreso a la Universdad en el Ecuador, evaluadando mediante examenes en las areas de conocimiento de Matematica, Fisica, Quimica, Sociales y Lenguaje. Dando a conocer a los estudiantes la calificaciòn con sus respectivos aciertos y fallos en cada pregunta, para que puedan reforzarlo en caso que lo requiera por su cuenta o medainte un curso sugerido.
 
 <div align="center"><img src="https://sites.google.com/site/ingresoalauniversidad124/_/rsrc/1381772602793/portada/AS-graduacion%20%285%29.png?height=250&width=320" height="100px"></div>
-
   
 ## Tipos de roles del proyecto
 
@@ -108,6 +96,17 @@ La comunicación del proyecto se va realizar mediante la aplicación de [Discord
 Ahí se encontrar los mismos roles especificados anteriormente, y los términos y condiciones que fueron enviados al correo electrónico.
 Este medio de comunicación solo es para tratar todos los temas relacionados del proyecto, si una persona comparte temas diferentes será baneada 1 día por primera vez, 1 semana por segunda vez, 1 mes por tercera vez y sacado del servidor por una cuarta vez.
 La solución de los problemas presentados (Bug) en el proyecto se puede realizar en el repositorio de GitHub. Donde se puede recomendar o dar solución al problema.
+
+## Labels a usarse dentro del proyecto
+
+- Programación
+- Bug
+- Documentación
+- Ambiente de Pruebas
+- Falta Conexión a la Base de Datos
+- Prioridad Alta
+- Prioridad Media
+- Prioridad Baja
 
 ## Tipo de Manera de Tomar Desiciones
 Tipo:Consenso,
