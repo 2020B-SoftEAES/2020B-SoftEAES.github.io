@@ -28,6 +28,11 @@ module.exports = {
       columnType: 'int',
       defaultsTo: 50
     },
+    estado: {
+      type: 'number',
+      columnType: 'int',
+      defaultsTo: 1
+    },
     duracion: {
       type: 'number',
       columnType: 'int',

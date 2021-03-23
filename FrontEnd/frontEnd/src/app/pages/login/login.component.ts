@@ -4,6 +4,9 @@ import {CrearUsuarioDto, UsuarioDto} from '../../dtos/usuario.dto';
 import {UsuarioService} from '../../services/rest/usuario.service';
 import {TipoUsuarioService} from '../../services/rest/tipo-usuario.service';
 import {TipoUsuarioDto} from '../../dtos/tipo-usuario.dto';
+import {Router} from '@angular/router';
+import {AppConstant} from '../../app.constant';
+import {AlertMessageService} from '../../services/alert-message.service';
 
 @Component({
   selector: 'app-login',
@@ -14,30 +17,36 @@ export class LoginComponent implements OnInit {
 
   email: string;
   password: string;
+  ruta: any;
+
   constructor(
-    private readonly autenticacionService: AutenticacionService
+    private readonly autenticacionService: AutenticacionService,
+    private readonly routerService: Router,
+    private readonly alertMessageService: AlertMessageService
   ) { }
 
   ngOnInit(): void {
+    this.ruta = ['/main'];
+    this.email = 'robert@hotmail.com';
+    this.password = '123456';
   }
 
   login(formularioLogin): void{
     if (formularioLogin.valid){
       this.autenticacionService.login(this.email, this.password).subscribe(
         autenticado => {
-          console.log(autenticado);
           if (autenticado){
-            alert('Bienvenidos');
+            this.routerService.navigate((this.ruta));
           } else {
-            alert('Credenciales incorrectas');
+            this.alertMessageService.mensajeError('Credenciales Incorrectas!!');
           }
         },
         error => {
-          alert('Credenciales Incorrectas!!');
+          this.alertMessageService.mensajeError('Credenciales Incorrectas!!');
         }
       );
     } else {
-      alert('Ingrese las credenciales!');
+      this.alertMessageService.mensajeError('Ingrese las credenciales!!');
     }
   }
 

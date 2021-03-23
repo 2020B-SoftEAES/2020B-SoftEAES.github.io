@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {environment} from '../../environments/environment';
 import {Observable, of} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {UsuarioDto} from '../dtos/usuario.dto';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class AutenticacionService {
     private readonly httpClientService: HttpClient
   ) {
     this.sesionDto  = {
-      accessToken : 'asdsadsad',
+      accessToken: 'TOKEN',
       usuarioDto: null
     };
   }
@@ -28,9 +29,9 @@ export class AutenticacionService {
       password: pass
     };
     return this.httpClientService
-      .post<SesionDto>(environment.url + this.nombreModelo, Objeto)
+      .post<UsuarioDto>(environment.url + this.nombreModelo, Objeto)
       .pipe(map(u => {
-        this.sesionDto = u;
+        this.sesionDto.usuarioDto = u;
         if (this.estaAutenticado()) {
           return of(true);
         } else {
@@ -40,6 +41,6 @@ export class AutenticacionService {
   }
 
   estaAutenticado(): boolean {
-    return !!this.sesionDto.accessToken;
+    return !!this.sesionDto.usuarioDto;
   }
 }

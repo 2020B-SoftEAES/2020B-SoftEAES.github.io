@@ -13,4 +13,6 @@ export class AppConstant {
   static readonly ID_TIPO_USUARIO_ADMINISTRADOR = 1;
   static readonly ID_TIPO_USUARIO_INSTRUCTOR = 2;
   static readonly ID_TIPO_USUARIO_ESTUDIANTE = 3;
+
+  static readonly EXAMEN_ESTADO_HABILITADO = 1;
 }

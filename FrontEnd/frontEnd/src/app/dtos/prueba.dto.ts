@@ -9,6 +9,7 @@ export interface PruebaDto {
   nombre: string;
   cupos: number;
   duracion: number;
+  estado: number;
   pruebaPregunta: PruebaPreguntaDto[];
   pruebaUsuario: PruebaUsuarioDto[];
   preguntas: PreguntaDto[];

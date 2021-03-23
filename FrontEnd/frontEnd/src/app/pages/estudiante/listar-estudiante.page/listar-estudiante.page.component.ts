@@ -21,10 +21,9 @@ export class ListarEstudiantePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.usuarioService.findAll().subscribe(usuarioDto => {
+        this.estudiantes = usuarioDto.filter(usuario => usuario.idTipoUsuario && usuario.idTipoUsuario['id'] === AppConstant.ID_TIPO_USUARIO_ESTUDIANTE);
         if (this.estudiantes.length < 1) {
           this.alertMessageService.mensajeInfo('No existen estudiantes registrados');
-        } else {
-          this.estudiantes = usuarioDto.filter(usuario => usuario.idTipoUsuario['id'] === AppConstant.ID_TIPO_USUARIO_ESTUDIANTE);
         }
       },
       error1 => this.alertMessageService.mensajeError(AppConstant.MENSAJE_ERROR_CONEXION_SERVIDOR)

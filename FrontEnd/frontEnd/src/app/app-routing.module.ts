@@ -15,11 +15,12 @@ import {EditarExamenPageComponent} from './pages/examen/editar-examen-page/edita
 import {EstudianteExamenPageComponent} from './pages/examen/estudiante-examen-page/estudiante-examen-page.component';
 import {EstudianteVerExamenPageComponent} from './pages/examen/estudiante-ver-examen-page/estudiante-ver-examen-page.component';
 import {VisualizarExamenPageComponent } from './pages/examen/visualizar-examen-page/visualizar-examen-page.component';
+import {ExamenesSimularPageComponent} from './pages/examen/examenes-simular-page/examenes-simular-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -44,6 +45,7 @@ const routes: Routes = [
       {path: 'estudianteExamen', component: EstudianteExamenPageComponent},
       {path: 'simularExamen/:id', component: SimularExamenPageComponent},
       {path: 'estudianteVerExamen/:id', component: EstudianteVerExamenPageComponent},
+      {path: 'estudianteExamenSimulador', component: ExamenesSimularPageComponent},
     ]
   }
 ];

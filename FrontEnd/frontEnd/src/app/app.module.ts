@@ -22,6 +22,7 @@ import { SimularExamenPageComponent } from './pages/examen/simular-examen-page/s
 import { EstudianteExamenPageComponent } from './pages/examen/estudiante-examen-page/estudiante-examen-page.component';
 import { EstudianteVerExamenPageComponent } from './pages/examen/estudiante-ver-examen-page/estudiante-ver-examen-page.component';
 import { VisualizarExamenPageComponent } from './pages/examen/visualizar-examen-page/visualizar-examen-page.component';
+import { ExamenesSimularPageComponent } from './pages/examen/examenes-simular-page/examenes-simular-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { VisualizarExamenPageComponent } from './pages/examen/visualizar-examen-
     SimularExamenPageComponent,
     EstudianteExamenPageComponent,
     EstudianteVerExamenPageComponent,
-    VisualizarExamenPageComponent
+    VisualizarExamenPageComponent,
+    ExamenesSimularPageComponent
   ],
   imports: [
     BrowserModule,

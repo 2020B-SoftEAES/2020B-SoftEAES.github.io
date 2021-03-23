@@ -1,1 +1,90 @@
-<p>simular-examen-page works!</p>
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+</div>
+<div class="container-fluid mt--7">
+  <form class="was-validated" #myForm="ngForm"
+        (submit)="templateForm(myForm.value)" novalidate>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">Examen - {{pruebaDto.codigo}}
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="nombreExamen">Nombre </label>
+                    <input type="text" id="nombreExamen" name="nombreExamen" disabled
+                           [(ngModel)]="pruebaDto.nombre" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="tipoExamen">Categoría </label>
+                    <input type="text" id="tipoExamen" name="tipoExamen" disabled
+                           [(ngModel)]="pruebaDto.tipo" class="form-control form-control-alternative">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="duracionExamen">Duración en minutos</label>
+                    <input type="number" id="duracionExamen" name="duracionExamen" disabled
+                           [(ngModel)]="pruebaDto.duracion" class="form-control form-control-alternative">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4"/>
+              <div *ngFor="let pregunta of preguntas; index as i">
+                <div class="row">
+                  <div class="col-12">
+                    <h5 class="mb-0">
+                      {{pregunta.codigo}}. {{pregunta.descripcion}} <span class="text-success" style="font-size: small">Puntaje: {{pregunta.puntaje}}</span>
+                    </h5>
+                  </div>
+                  <div class="col-12">
+                    <div class="custom-control custom-radio">
+                      <input [id]="'opcion1'+i" type="radio" class="custom-control-input" value="1"
+                             [name]="'pregunta'+i" ngModel>
+                      <label class="custom-control-label" [attr.for]="'opcion1'+i">{{pregunta.opcion1}}</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input [id]="'opcion2'+i" type="radio" class="custom-control-input" value="2"
+                             [name]="'pregunta'+i" ngModel>
+                      <label class="custom-control-label" [attr.for]="'opcion2'+i">{{pregunta.opcion2}}</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input [id]="'opcion3'+i" type="radio" class="custom-control-input" value="3"
+                             [name]="'pregunta'+i" ngModel>
+                      <label class="custom-control-label" [attr.for]="'opcion3'+i">{{pregunta.opcion3}}</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input [id]="'opcion4'+i" type="radio" class="custom-control-input" value="4"
+                             [name]="'pregunta'+i" ngModel>
+                      <label class="custom-control-label" [attr.for]="'opcion4'+i">{{pregunta.opcion4}}</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <span class="text-primary text-sm-left">Respuesta: {{pregunta.respuestaCorrecta}} </span>
+                  </div>
+                </div>
+                <br>
+              </div>
+            <hr class="my-4"/>
+            <div class="row" style="float: right">
+              <div class="col-12">
+                <h3 class="mb-0">
+                  <button type="submit" class="btn btn-outline-info" [disabled]="myForm.invalid">
+                    <i class="fa fa-save"></i> Enviar todo y terminar
+                  </button>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
