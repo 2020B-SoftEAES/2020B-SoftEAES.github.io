@@ -126,8 +126,7 @@ Los recusos se van a gastar en el pago del esfuerzo a las personas, vamos a moti
 Por otro lado, vamos a invertir en un Patrocinador para captar más ingresos. Sobre todo vamos a invertir esos recursos en el proyecto, teniendo nuestro principal enfoque en la capacitación de nuevas tegnologias, para integrar en nuestro proyecto y llegar hacer el mejor Software Open Source con el mejor equipo de ultima generación.
 
 ## Estrategia de Ramas
-- Se utilizara Estrategia basada en entornos
-Donde existe: 
+Se utilizara Estrategia basada en entornos. Donde existe: 
 - Entorno de desarrollo.
 - Entorno de preproducción.
 - Entorno de producción. 
